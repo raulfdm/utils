@@ -27,12 +27,11 @@
     "url": "git+https://github.com/raulfdm/utils.git"
   },
   "scripts": {
-    "test": "cd ../../ && npm run test -- ./packages/simple-id/__tests__/**",
-    "test:tdd": "cd ../../ && npm run test -- ./packages/simple-id/__tests__/** --watch",
+    "test": "cd ../../ && yarn test ./packages/simple-id/__tests__/**",
+    "test:tdd": "yarn run test --watch",
     "build": "rollup -c"
   },
   "devDependencies": {
-    "@babel/preset-es2015": "^7.0.0-beta.53",
     "lerna": "^3.4.3"
   }
 }
