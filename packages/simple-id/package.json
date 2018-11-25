@@ -1,0 +1,32 @@
+{
+  "name": "simple-id",
+  "version": "1.0.0",
+  "description": "Really tiny and small id generator",
+  "keywords": [
+    "id",
+    "generator",
+    "id"
+  ],
+  "author": "Raul Melo <melo.raulf@gmail.com>",
+  "homepage": "https://github.com/raulfdm/utils#readme",
+  "license": "MIT",
+  "main": "dist/simple-id.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raulfdm/utils.git"
+  },
+  "scripts": {
+    "test": "cd ../../ && npm run test -- ./packages/simple-id/**/*.js",
+    "build": "rollup lib/simple-id.js --file dist/simple-id.js --format umd --name SimpleId"
+  },
+  "bugs": {
+    "url": "https://github.com/raulfdm/utils/issues"
+  }
+}
