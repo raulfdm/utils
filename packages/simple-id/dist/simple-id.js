@@ -1,21 +1,16 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (factory());
+  (global.SimpleId = factory());
 }(this, (function () { 'use strict';
 
-  module.exports = simpleId;
-
-  // https://gist.github.com/gordonbrander/2230317
-  function simpleId({ noUnderscore = false }) {
-    // Math.random should be unique because of its seeding algorithm.
-    // Convert it to base 36 (numbers + letters), and grab the first 9 characters
-    // after the decimal.
-    const id = Math.random()
-      .toString(36)
-      .substr(2, 9);
-
+  const simpleId = ({
+    noUnderscore = false
+  }) => {
+    const id = Math.random().toString(36).substr(2, 9);
     return `${!noUnderscore && '_'}${id}`;
-  }
+  };
+
+  return simpleId;
 
 })));

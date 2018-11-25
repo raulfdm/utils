@@ -1,5 +1,5 @@
 {
-  "name": "simple-id",
+  "name": "@raulfdm/simple-id",
   "version": "1.0.0",
   "description": "Really tiny and small id generator",
   "keywords": [
@@ -11,6 +11,10 @@
   "homepage": "https://github.com/raulfdm/utils#readme",
   "license": "MIT",
   "main": "dist/simple-id.js",
+  "module": "dist/simple-id.es.js",
+  "bugs": {
+    "url": "https://github.com/raulfdm/utils/issues"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -23,10 +27,12 @@
     "url": "git+https://github.com/raulfdm/utils.git"
   },
   "scripts": {
-    "test": "cd ../../ && npm run test -- ./packages/simple-id/**/*.js",
-    "build": "rollup lib/simple-id.js --file dist/simple-id.js --format umd --name SimpleId"
+    "test": "cd ../../ && npm run test -- ./packages/simple-id/__tests__/**",
+    "test:tdd": "cd ../../ && npm run test -- ./packages/simple-id/__tests__/** --watch",
+    "build": "rollup -c"
   },
-  "bugs": {
-    "url": "https://github.com/raulfdm/utils/issues"
+  "devDependencies": {
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "lerna": "^3.4.3"
   }
 }
