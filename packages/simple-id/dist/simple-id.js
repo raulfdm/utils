@@ -4,12 +4,13 @@
   (global.SimpleId = factory());
 }(this, (function () { 'use strict';
 
-  var simpleId = function simpleId(_ref) {
-    var _ref$noUnderscore = _ref.noUnderscore,
-        noUnderscore = _ref$noUnderscore === void 0 ? false : _ref$noUnderscore;
-    var id = Math.random().toString(36).substr(2, 9);
-    return "".concat(!noUnderscore && '_').concat(id);
-  };
+  var simpleId = (function () {
+    var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var _opts$noUnderscore = opts.noUnderscore,
+        noUnderscore = _opts$noUnderscore === void 0 ? false : _opts$noUnderscore;
+    var randomValue = Math.random().toString(36).substr(2, 9);
+    return "".concat(!noUnderscore ? '_' : '').concat(randomValue);
+  });
 
   return simpleId;
 
