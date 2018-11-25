@@ -1,12 +1,8 @@
 {
-  "name": "root",
+  "name": "@raulfdm/utils",
   "private": true,
-  "scripts": {
-    "test": "jest"
-  },
-  "devDependencies": {
-    "jest": "^23.6.0",
-    "lerna": "^3.4.3",
-    "rollup": "^0.67.3"
-  }
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {}
 }
