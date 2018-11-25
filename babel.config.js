@@ -1,10 +1,4 @@
+/* babel file to jest */
 module.exports = {
-  presets: [
-    [
-      '@babel/preset-es2015',
-      {
-        modules: false
-      }
-    ]
-  ]
+  presets: ['@babel/preset-env']
 };
