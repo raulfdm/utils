@@ -4,11 +4,11 @@
   (global.SimpleId = factory());
 }(this, (function () { 'use strict';
 
-  const simpleId = ({
-    noUnderscore = false
-  }) => {
-    const id = Math.random().toString(36).substr(2, 9);
-    return `${!noUnderscore && '_'}${id}`;
+  var simpleId = function simpleId(_ref) {
+    var _ref$noUnderscore = _ref.noUnderscore,
+        noUnderscore = _ref$noUnderscore === void 0 ? false : _ref$noUnderscore;
+    var id = Math.random().toString(36).substr(2, 9);
+    return "".concat(!noUnderscore && '_').concat(id);
   };
 
   return simpleId;
