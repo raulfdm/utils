@@ -1,5 +1,7 @@
-# @raulfdm/utils
+# @raulfdm utils collection
 
-> A bunch of utils because I'm trying to reimplement it.
+> A collection of utils I have to write all the time and I'm tired to reimplement it.
 
-## 
+## List
+
+ - [simple-id](packages/simple-id/): Very simple function to generate unique (and short max 10 length) ID.
