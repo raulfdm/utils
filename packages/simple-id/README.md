@@ -1,6 +1,12 @@
 # `@raulfdm/simple-id`
 
-> 'Cause sometimes we need a really unique ID without much code (Size: 238B)
+> 'Cause sometimes we need a really unique ID without much code
+
+<p align="center">
+  <a href="https://bundlephobia.com/result?p=@raulfdm/simple-id"><img src="https://badgen.net/bundlephobia/minzip/@raulfdm/simple-id" /></a>
+  <a href="https://github.com/raulfdm/utils/blob/master/packages/simple-id/LICENSE.md"><img src="https://badgen.net/npm/license/@raulfdm/simple-id" /></a>
+  <a href="https://www.npmjs.com/package/@raulfdm/simple-id"><img src="https://badgen.net/npm/v/@raulfdm/simple-id" /></a>
+</p>
 
 ## Motivation
 
@@ -52,4 +58,5 @@ const myId = SimpleId({ underscore: false }); // Something like: "ntikcyel3"
 ```
 
 ## License
+
 [MIT](LICENSE.md)
