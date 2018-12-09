@@ -4,7 +4,7 @@
 
 ## Motivation
 
-Quite often I had to find a way to create a function to generate ID. So this is a minimalist one function library (extracted from [here](https://gist.github.com/gordonbrander/2230317)) to generate ID using `Math` and `toString` plus a simple param to enable/disable underscore.
+Quite often I had to find a way to create a function to generate ID. So this is a minimalist one function library (extracted from [here](https://gist.github.com/gordonbrander/2230317) by @gordonbrander) to generate ID using `Math` and `toString` plus a simple param to enable/disable underscore.
 
 ## Usage
 
