@@ -6,12 +6,12 @@ export default {
   output: [
     {
       format: 'umd',
-      file: 'dist/count-decimal.js',
-      name: 'CountDecimal'
+      file: 'dist/decimal-counter.js',
+      name: 'DecimalCounter'
     },
     {
       format: 'esm',
-      file: 'dist/count-decimal.es.js'
+      file: 'dist/decimal-counter.es.js'
     }
   ],
   plugins: [typescript(), cleanup()]

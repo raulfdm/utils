@@ -1,4 +1,4 @@
-function countDecimal(number: string | number): number {
+function decimalCounter(number: string | number): number {
   const hasDecimal = /[.,]/gi;
   const numberString = `${number}`;
 
@@ -18,4 +18,4 @@ function countDecimal(number: string | number): number {
   return `${result}`.length;
 }
 
-export default countDecimal;
+export default decimalCounter;

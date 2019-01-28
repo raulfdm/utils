@@ -1,4 +1,4 @@
-function countDecimal(number) {
+function decimalCounter(number) {
     var hasDecimal = /[.,]/gi;
     var numberString = "" + number;
     if (!hasDecimal.test(numberString)) {
@@ -13,4 +13,4 @@ function countDecimal(number) {
     return ("" + result).length;
 }
 
-export default countDecimal;
+export default decimalCounter;

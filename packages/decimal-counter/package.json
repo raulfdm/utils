@@ -1,13 +1,14 @@
 {
-  "name": "@raulfdm/count-decimal",
+  "name": "@raulfdm/decimal-counter",
   "version": "1.0.0",
   "description": "How many decimals places has your number?",
   "license": "MIT",
-  "main": "dist/count-decimal.js",
-  "module": "dist/count-decimal.es.js",
+  "main": "dist/decimal-counter.js",
+  "module": "dist/decimal-counter.es.js",
   "keywords": [
     "decimal",
-    "decimal counter"
+    "decimal counter",
+    "float"
   ],
   "bugs": {
     "url": "https://github.com/raulfdm/utils/issues"

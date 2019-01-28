@@ -1,10 +1,10 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global.CountDecimal = factory());
+  (global.DecimalCounter = factory());
 }(this, (function () { 'use strict';
 
-  function countDecimal(number) {
+  function decimalCounter(number) {
       var hasDecimal = /[.,]/gi;
       var numberString = "" + number;
       if (!hasDecimal.test(numberString)) {
@@ -19,6 +19,6 @@
       return ("" + result).length;
   }
 
-  return countDecimal;
+  return decimalCounter;
 
 })));
