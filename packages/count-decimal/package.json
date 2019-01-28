@@ -1,21 +1,49 @@
 {
-  "name": "count-decimal",
+  "name": "@raulfdm/count-decimal",
   "version": "1.0.0",
+  "description": "How many decimals places has your number?",
   "license": "MIT",
   "main": "dist/count-decimal.js",
   "module": "dist/count-decimal.es.js",
+  "keywords": [
+    "decimal",
+    "decimal counter"
+  ],
+  "bugs": {
+    "url": "https://github.com/raulfdm/utils/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raulfdm/utils.git"
+  },
+  "author": "Raul Melo <melo.raulf@gmail.com>",
   "scripts": {
     "build": "rollup -c",
+    "bundle": "bundlesize",
     "prebuild": "rimraf dist/",
-    "test": "jest",
-    "test:tdd": "jest --watch",
-    "test:cov": "jest --coverage"
+    "test:unit": "jest",
+    "test:cov": "yarn test:unit --coverage",
+    "test:tdd": "yarn test:unit --watch",
+    "test": "npm-run-all test:unit bundle"
   },
   "devDependencies": {
     "@types/jest": "^23.3.13",
+    "npm-run-all": "^4.1.5",
     "rollup-plugin-typescript": "^1.0.0",
     "ts-jest": "^23.10.5",
     "tslib": "^1.9.3",
     "typescript": "^3.2.4"
-  }
+  },
+  "bundlesize": [
+    {
+      "path": "./*.js",
+      "maxSize": "1 kB"
+    }
+  ]
 }
