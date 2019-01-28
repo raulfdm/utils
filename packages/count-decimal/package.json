@@ -1,0 +1,21 @@
+{
+  "name": "count-decimal",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/count-decimal.js",
+  "module": "dist/count-decimal.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prebuild": "rimraf dist/",
+    "test": "jest",
+    "test:tdd": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "rollup-plugin-typescript": "^1.0.0",
+    "ts-jest": "^23.10.5",
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.4"
+  }
+}
