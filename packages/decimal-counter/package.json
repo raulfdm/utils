@@ -5,6 +5,8 @@
   "license": "MIT",
   "main": "dist/decimal-counter.js",
   "module": "dist/decimal-counter.es.js",
+  "homepage": "https://github.com/raulfdm/utils#readme",
+  "private": false,
   "keywords": [
     "decimal",
     "decimal counter",
