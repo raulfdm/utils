@@ -1,6 +1,6 @@
 {
   "name": "@raulfdm/decimal-counter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "How many decimals places has your number?",
   "license": "MIT",
   "main": "dist/decimal-counter.js",

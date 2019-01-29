@@ -5,17 +5,11 @@ function decimalCounter(number: string | number): number {
   if (!hasDecimal.test(numberString)) {
     return 0;
   }
+  
+  const regex = /[.,](\d*)/;
+  const [_, result] = numberString.match(regex);
 
-  const regex = /[.,](\d*)/gi;
-
-  let arr;
-  let result = 0;
-
-  while ((arr = regex.exec(numberString)) !== null) {
-    result = arr[1];
-  }
-
-  return `${result}`.length;
+  return result.length;
 }
 
 export default decimalCounter;
