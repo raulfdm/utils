@@ -10,13 +10,9 @@
       if (!hasDecimal.test(numberString)) {
           return 0;
       }
-      var regex = /[.,](\d*)/gi;
-      var arr;
-      var result = 0;
-      while ((arr = regex.exec(numberString)) !== null) {
-          result = arr[1];
-      }
-      return ("" + result).length;
+      var regex = /[.,](\d*)/;
+      var _a = numberString.match(regex), _ = _a[0], result = _a[1];
+      return result.length;
   }
 
   return decimalCounter;
